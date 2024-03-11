@@ -24,7 +24,15 @@
 //     console.log('hello');
 // }
 
-const str = 'hello';
-str[1] = 'y';
-console.log(str); // hello
+// const str = 'hello';
+// str[1] = 'y';
+// console.log(str); // hello
 
+const str = 'hello';
+changeValue(str);
+console.log(str); // hello;
+function changeValue(something) {
+    console.log(something); // hello
+    something = 'something else';
+    console.log(something); // something else
+}

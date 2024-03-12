@@ -61,7 +61,19 @@
 // console.log(obj); // { name: 'Jacob', age: 31, profession: 'software engineer' }
 // console.log(otherObj); // { name: 'James', age: 31, profession: 'software engineer' }
 
-const obj = {name: 'Jacob', age: 31, profession: 'software engineer'};
-const otherObj = {...obj, name: 'James'};
-console.log(obj); // { name: 'Jacob', age: 31, profession: 'software engineer' }
-console.log(otherObj); // { name: 'James', age: 31, profession: 'software engineer' }
+// const obj = {name: 'Jacob', age: 31, profession: 'software engineer'};
+// const otherObj = {...obj, name: 'James'};
+// console.log(obj); // { name: 'Jacob', age: 31, profession: 'software engineer' }
+// console.log(otherObj); // { name: 'James', age: 31, profession: 'software engineer' }
+
+let a = 10;
+let b = 'something';
+let c = true;
+let d = 50;
+!(a === 10 || b && c || d > 100)
+!(10 === 10 || 'something' && true || 50 > 100)
+!(true || true && true || false)
+!(true || true || false)
+!(true || false)
+!(true)
+false

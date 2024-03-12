@@ -28,11 +28,40 @@
 // str[1] = 'y';
 // console.log(str); // hello
 
-const str = 'hello';
-changeValue(str);
-console.log(str); // hello;
-function changeValue(something) {
-    console.log(something); // hello
-    something = 'something else';
-    console.log(something); // something else
-}
+// const str = 'hello';
+// changeValue(str);
+// console.log(str); // hello;
+// function changeValue(something) {
+//     console.log(something); // hello
+//     something = 'something else';
+//     console.log(something); // something else
+// }
+
+// const a = [1, 2, 3, 4];
+// const b = a;
+// console.log(a); // [1, 2, 3, 4]
+// console.log(b); // [1, 2, 3, 4]
+
+// const a = [1, 2, 3, 4];
+// function changeValue(arr) {
+//     arr[1] = 20;
+// }
+// changeValue(a);
+// console.log(a); // [ 1, 20, 3, 4 ]
+
+// const a = [1, 2, 3, 4];
+// const b = [...a];
+// b[1] = 10;
+// console.log(a); // [ 1, 2, 3, 4 ]
+// console.log(b); // [ 1, 10, 3, 4 ]
+
+// const obj = {name: 'Jacob', age: 31, profession: 'software engineer'};
+// const otherObj = {...obj};
+// otherObj.name = 'James';
+// console.log(obj); // { name: 'Jacob', age: 31, profession: 'software engineer' }
+// console.log(otherObj); // { name: 'James', age: 31, profession: 'software engineer' }
+
+const obj = {name: 'Jacob', age: 31, profession: 'software engineer'};
+const otherObj = {...obj, name: 'James'};
+console.log(obj); // { name: 'Jacob', age: 31, profession: 'software engineer' }
+console.log(otherObj); // { name: 'James', age: 31, profession: 'software engineer' }

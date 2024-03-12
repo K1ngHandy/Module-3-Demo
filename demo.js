@@ -90,5 +90,7 @@
 
 const person = undefined;
 if (person && person.name === 'Jacob') {
-    console.log(`Jacob is ${person.age} years old`); // no log
+    console.log(`Jacob is ${person.age} years old`);
+} else {
+    console.log('else'); // else
 }
